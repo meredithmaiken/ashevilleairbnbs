@@ -87,7 +87,7 @@ for (i = 0; i < 3; i++) {
     $('head').append($("<style> .marker-color-" + (i + 1).toString() + " { color: " + colors[i] + "; font-size: 15px; text-shadow: 0 0 3px #ffffff;} </style>"));
 }
 
-airbnb_listings = L.geoJson.ajax("assets/airbnb_listings.geojson",{
+airbnb_listings = L.geoJson.ajax("Assets/airbnb_listings.geojson",{
 
   // assign a function to the onEachFeature parameter of the airbnb_listings object.
   // Then each (point) feature will have a popup window.
@@ -136,7 +136,7 @@ function style(feature) {
     };
 }
 
-L.geoJson.ajax("assets/zoning_districts.geojson", {
+L.geoJson.ajax("Assets/zoning_districts.geojson", {
     style: style
 }).addTo(mymap);
 
